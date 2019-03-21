@@ -1,0 +1,35 @@
+// -------------------------------------
+//            GLOBAL VARIABLES
+// -------------------------------------
+
+// ----- site colors ----- //
+
+$siteColors: (
+  h1: tomato,
+  h2: #ffc600,
+  h3: #ddd
+);
+
+@each $el, $color in $siteColors {
+  #{$el} {
+    color: $color;
+  }
+  .#{$el} {
+    color: $color;
+  }
+}
+
+// ----- site backgrounds ----- //
+
+$siteBackgrounds: (
+  body: #181818
+);
+
+@each $el, $background in $siteBackgrounds {
+  #{$el} {
+    background: $background;
+  }
+  .#{$el} {
+    background: $background;
+  }
+}
